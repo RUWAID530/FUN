@@ -1,0 +1,44 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: purple;
+  color: aliceblue;
+}
+.inputBox {
+position: relative;
+width: 250px;
+ }
+.inputBox input{
+  width: 100%;
+  padding: 10px;
+}
+button{
+box-shadow:0 0 5px cyan,
+0 0 25px cyan;
+
+}
+button:hover{
+  box-shadow: 0 0 5px cyan,
+  0 0 25px cyan,0 0 50px cyan,
+  0 0 100px cyan,0 0 200px cyan;
+}
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 18px;
+  max-width: 80%;
+}

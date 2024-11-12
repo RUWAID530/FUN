@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Character Test</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+    <h1>Know about Your future wife Character</h1>
+    <div class="input box">
+        <input type="text" id="name" type= "text">
+        <span>Unga peru enna bhai</span>
+    </div>
+    <div class="input box">
+          <input type="number" id="age"/>
+          <span>Enter Your Age</span>
+    </div>
+    <button onclick= generateCharacter() >Touch pannuga bhai</button>
+    <div id="result" class="result"></div>
+    
+</body>
+       
+       <script>
+    function generateCharacter() {
+        // Get the name and age input values
+        const name = document.getElementById("name").value.trim();
+        const age = document.getElementById("age").value.trim();
+        const resultDiv = document.getElementById("result");
+
+        // Check if inputs are valid
+        if (name === "" || age === "") {
+            alert("Please fill in both fields.");
+            return;
+        }
+
+        // Custom message based on the name (This can be expanded for more dynamic responses)
+        let characterDescription = "";
+
+        if (name === "sheik mohideen") {
+            characterDescription = `Hello, ${name}!"May Allah bless you with a partner who brings tranquility to your heart, a companion whose faith strengthens your own, The right spouse is not just a match for your heart, but a source of guidance and peace in this world.
+            You will get a women like america.`;
+        } else if (name === "munawwar sajidh") {
+            characterDescription = `Hi ${name}!"Stop hunting for a Saliha, bro—you’ve already found her! Allah’s blessings are already on your side, so don’t let your heart wander. Just show up with the same devotion you put into your prayers, and she’ll be your Jannah on Earth!.`;
+        } else if (name === "sathya kannan") {
+            characterDescription = `Hey ${name}, unaku nan ennatha solla, nee inga muyal kutti nu notes potutu iruka anga oruthan ennana nice nu sollitu irukaru pathuko, onnu mattum solren unaku ethiri ska than.`;
+        } else {
+            characterDescription = `Hello ${name}, you are a such a good soul, you will get a pure saliha da . don't worry.`;
+        }
+
+        // Display the generated description and make the result visible
+        resultDiv.innerHTML = `
+            <p>${characterDescription}</p>
+            <p>Your age is: ${age}</p>
+        `;
+        
+        // Show the result section
+        resultDiv.style.display = "block";
+}
+    
+</script>
+
+</body>
+</html>
